@@ -1,0 +1,139 @@
+/* ========== GLOBAL STYLES ========== */
+html { scroll-behavior: smooth; }
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 1.5rem;
+    position: sticky;
+    top: 0;
+    background-color: #0E1117;
+    padding: 1rem;
+    z-index: 999;
+    border-radius: 12px;
+}
+
+/* Left-side nav buttons */
+.navbar .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #262730;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+.navbar .nav-link:hover {
+    background-color: #FF4B4B;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Right-side social area */
+.navbar-right {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Social links */
+.navbar-right a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 6px;
+    transition: color 0.25s ease, background-color 0.25s ease, transform 0.2s ease;
+}
+
+.navbar-right a:hover {
+    color: #FF4B4B;
+    background-color: rgba(255, 75, 75, 0.08);
+    transform: translateY(-1px);
+}
+
+/* Small icon style */
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* Target st.image in project section */
+[data-testid="stImage"] img {
+    width: 280px !important;   /* smaller size */
+    height: 180px !important;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-testid="stImage"] img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input, textarea {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #262730;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    outline: none;
+}
+input:focus, textarea:focus {
+    border: 1px solid #FF4B4B;
+    box-shadow: 0px 0px 6px rgba(255,75,75,0.6);
+}
+button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF4B4B;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #ff1f1f;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+}
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Explicitly style navbar-right icons */
+.navbar-right img {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+
